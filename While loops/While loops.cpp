@@ -4,7 +4,7 @@
 int main()
 {
 
-    do {
+	while (true) {
 
 		std::cout << "1. Adittion. " << std::endl;
 		std::cout << "2. Subtraction. " << std::endl;
@@ -33,7 +33,7 @@ int main()
 			std::cin >> value1;
 			std::cout << Question2 << std::flush;
 			std::cin >> value2;
-			
+
 			std::cout << Awnser << value1 + value2 << std::endl;
 			std::cout << "\r" << std::endl;
 
@@ -73,8 +73,8 @@ int main()
 			std::cout << "Invalid otion..." << std::endl;
 		}
 
-
-    } while (true);
+	}
+    
     
 
 }
