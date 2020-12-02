@@ -8,30 +8,57 @@ int main()
 
     do {
 
-		std::cout << "1. Open file. " << std::endl;
-		std::cout << "2. Copy file. " << std::endl;
-		std::cout << "3. Delete file. " << std::endl;
-		std::cout << "4. Send file. " << std::endl;
+		std::cout << "1. Adittion. " << std::endl;
+		std::cout << "2. Subtraction. " << std::endl;
+		std::cout << "3. Multiplication. " << std::endl;
+		std::cout << "4. Division " << std::endl;
 		std::cout << "5. Quit program. " << std::endl;
 
 		std::cout << "Enter your selection > " << std::flush;
 
-		int value;
-		std::cin >> value;
+		int selection;
+		int value1;
+		int value2;
+		std::cin >> selection;
 
-		if (value == 1) {
-			std::cout << "Opening file..." << std::endl;
+		if (selection == 1) {
+			std::cout << "Give first number > " << std::flush;
+			std::cin >> value1;
+			std::cout << "Give second number > " << std::flush;
+			std::cin >> value2;
+			
+			std::cout << "The awnser is. " << value1 + value2 << std::endl;
+			std::cout << "\r" << std::endl;
+
 		}
-		else if (value == 2) {
-			std::cout << "Copying file..." << std::endl;
+		else if (selection == 2) {
+			std::cout << "Give first number > " << std::flush;
+			std::cin >> value1;
+			std::cout << "Give second number > " << std::flush;
+			std::cin >> value2;
+
+			std::cout << "The awnser is. " << value1 - value2 << std::endl;
+			std::cout << "\r" << std::endl;
 		}
-		else if (value == 3) {
-			std::cout << "Deleting file..." << std::endl;
+		else if (selection == 3) {
+			std::cout << "Give first number > " << std::flush;
+			std::cin >> value1;
+			std::cout << "Give second number > " << std::flush;
+			std::cin >> value2;
+
+			std::cout << "The awnser is. " << value1 * value2 << std::endl;
+			std::cout << "\r" << std::endl;
 		}
-		else if (value == 4) {
-			std::cout << "Sending file..." << std::endl;
+		else if (selection == 4) {
+			std::cout << "Give first number > " << std::flush;
+			std::cin >> value1;
+			std::cout << "Give second number > " << std::flush;
+			std::cin >> value2;
+
+			std::cout << "The awnser is. " << value1 / value2 << std::endl;
+			std::cout << "\r" << std::endl;
 		}
-		else if (value == 5) {
+		else if (selection == 5) {
 			std::cout << "Quiting .... " << std::endl;
 			i = 1;
 		}
