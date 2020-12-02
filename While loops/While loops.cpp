@@ -3,8 +3,6 @@
 
 int main()
 {
-    
-    int i = 0;
 
     do {
 
@@ -69,14 +67,14 @@ int main()
 		}
 		else if (selection == 5) {
 			std::cout << "Quiting .... " << std::endl;
-			i = 1;
+			break;
 		}
 		else {
 			std::cout << "Invalid otion..." << std::endl;
 		}
 
 
-    } while (i == 0);
+    } while (true);
     
 
 }
