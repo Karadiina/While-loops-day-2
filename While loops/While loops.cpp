@@ -33,6 +33,7 @@ int main()
 			std::cin >> value1;
 			std::cout << Question2 << std::flush;
 			std::cin >> value2;
+			std::cout << "\r" << std::endl;
 
 			std::cout << Awnser << value1 + value2 << std::endl;
 			std::cout << "\r" << std::endl;
@@ -43,6 +44,7 @@ int main()
 			std::cin >> value1;
 			std::cout << Question2 << std::flush;
 			std::cin >> value2;
+			std::cout << "\r" << std::endl;
 
 			std::cout << Awnser << value1 - value2 << std::endl;
 			std::cout << "\r" << std::endl;
@@ -52,6 +54,7 @@ int main()
 			std::cin >> value1;
 			std::cout << Question2 << std::flush;
 			std::cin >> value2;
+			std::cout << "\r" << std::endl;
 
 			std::cout << Awnser << value1 * value2 << std::endl;
 			std::cout << "\r" << std::endl;
@@ -61,16 +64,19 @@ int main()
 			std::cin >> value1;
 			std::cout << Question2 << std::flush;
 			std::cin >> value2;
+			std::cout << "\r" << std::endl;
 
 			std::cout << Awnser << value1 / value2 << std::endl;
 			std::cout << "\r" << std::endl;
 		}
 		else if (selection == 5) {
+			std::cout << "\r" << std::endl;
 			std::cout << "Quiting .... " << std::endl;
 			break;
 		}
 		else {
 			std::cout << "Invalid otion..." << std::endl;
+			std::cout << "\r" << std::endl;
 		}
 
 	}
