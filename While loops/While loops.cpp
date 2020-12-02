@@ -16,46 +16,55 @@ int main()
 
 		std::cout << "Enter your selection > " << std::flush;
 
+		std::string Question1;
+		Question1 = "Give first number > ";
+		std::string Question2;
+		Question2 = "Give second number > ";
+		std::string Awnser;
+		Awnser = "The awnser is. ";
+
 		int selection;
 		int value1;
 		int value2;
 		std::cin >> selection;
 
+
+
 		if (selection == 1) {
-			std::cout << "Give first number > " << std::flush;
+			std::cout << Question1 << std::flush;
 			std::cin >> value1;
-			std::cout << "Give second number > " << std::flush;
+			std::cout << Question2 << std::flush;
 			std::cin >> value2;
 			
-			std::cout << "The awnser is. " << value1 + value2 << std::endl;
+			std::cout << Awnser << value1 + value2 << std::endl;
 			std::cout << "\r" << std::endl;
 
 		}
 		else if (selection == 2) {
-			std::cout << "Give first number > " << std::flush;
+			std::cout << Question1 << std::flush;
 			std::cin >> value1;
-			std::cout << "Give second number > " << std::flush;
+			std::cout << Question2 << std::flush;
 			std::cin >> value2;
 
-			std::cout << "The awnser is. " << value1 - value2 << std::endl;
+			std::cout << Awnser << value1 - value2 << std::endl;
 			std::cout << "\r" << std::endl;
 		}
 		else if (selection == 3) {
-			std::cout << "Give first number > " << std::flush;
+			std::cout << Question1 << std::flush;
 			std::cin >> value1;
-			std::cout << "Give second number > " << std::flush;
+			std::cout << Question2 << std::flush;
 			std::cin >> value2;
 
-			std::cout << "The awnser is. " << value1 * value2 << std::endl;
+			std::cout << Awnser << value1 * value2 << std::endl;
 			std::cout << "\r" << std::endl;
 		}
 		else if (selection == 4) {
-			std::cout << "Give first number > " << std::flush;
+			std::cout << Question1 << std::flush;
 			std::cin >> value1;
-			std::cout << "Give second number > " << std::flush;
+			std::cout << Question2 << std::flush;
 			std::cin >> value2;
 
-			std::cout << "The awnser is. " << value1 / value2 << std::endl;
+			std::cout << Awnser << value1 / value2 << std::endl;
 			std::cout << "\r" << std::endl;
 		}
 		else if (selection == 5) {
