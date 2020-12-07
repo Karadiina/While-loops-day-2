@@ -8,7 +8,7 @@ void show_menu() {
 	std::cout << "4. Division " << std::endl;
 	std::cout << "5. Quit program. " << std::endl;
 }
-int process_selection() {
+int get_input() {
 		int selection;
 	std::cout << "Enter your selection > " << std::flush;
 	std::cin >> selection;
@@ -25,7 +25,7 @@ int main(){
 
 
 		show_menu();
-		int selection = process_selection();
+		int selection = get_input();
 
 		std::string Question1;
 		Question1 = "Give first number > ";
