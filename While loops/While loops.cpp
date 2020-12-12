@@ -1,5 +1,17 @@
-
 #include <iostream>
+#include "Header.h"
+
+int main() {
+	
+	while (true) {
+		int n;
+
+		show_menu();
+		int selection = get_input();
+		n = Proces_input(selection);
+		if (n == 5) { break; }
+		}
+}
 
 void show_menu() {
 	std::cout << "1. Adittion. " << std::endl;
@@ -8,14 +20,18 @@ void show_menu() {
 	std::cout << "4. Division " << std::endl;
 	std::cout << "5. Quit program. " << std::endl;
 }
+
+
 int get_input() {
-		int selection;
+	int selection;
 	std::cout << "Enter your selection > " << std::flush;
 	std::cin >> selection;
 	return selection;
 }
-int Proces_input() {
-	int selection = get_input();
+	
+
+int Proces_input(int selection) {
+
 	std::string Question1;
 	Question1 = "Give first number > ";
 	std::string Question2;
@@ -75,7 +91,7 @@ int Proces_input() {
 	case 5: {
 		std::cout << "\r" << std::endl;
 		std::cout << "Quiting .... " << std::endl;
-		return 2;
+		return 5;
 		break;
 	}
 	default: {
@@ -87,15 +103,3 @@ int Proces_input() {
 }
 
 
-int main(){
-	int i = 1;
-	while (i < 2) {
-		
-		show_menu();
-		Proces_input();
-		int i = Proces_input();
-		
-	}
-	}
-
-	
